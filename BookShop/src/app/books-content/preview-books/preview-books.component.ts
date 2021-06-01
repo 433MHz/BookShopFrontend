@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-preview-books',
   templateUrl: './preview-books.component.html',
-  styleUrls: ['./preview-books.component.css', '../booksAndCategories.css']
+  styleUrls: ['./preview-books.component.css']
 })
 export class PreviewBooksComponent implements OnInit {
 
