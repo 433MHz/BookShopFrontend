@@ -1,4 +1,9 @@
 <div class="topNav">
-  <button>Categories</button>
-  <button>Books</button>
+  <button (click) = "changeStateOfCategoriesComponentVisiblity()">Categories</button>
+  <button (click) = "changeStateOfBooksComponentVisiblity()">Books</button>
+</div>
+
+<div class="mainContainer">
+  <app-categories-content *ngIf = "showCategoriesComponent"></app-categories-content>
+  <app-books-content *ngIf = "showBooksComponent"></app-books-content>
 </div>

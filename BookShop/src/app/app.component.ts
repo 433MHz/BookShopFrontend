@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BookShop';
+
+  showCategoriesComponent = true;
+  showBooksComponent = false;
+
+  changeStateOfCategoriesComponentVisiblity(){
+    this.showBooksComponent = false;
+    this.showCategoriesComponent = true;
+  }
+
+  changeStateOfBooksComponentVisiblity(){
+    this.showCategoriesComponent = false;
+    this.showBooksComponent = true;
+  }
 }

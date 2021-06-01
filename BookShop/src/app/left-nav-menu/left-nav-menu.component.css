@@ -1,0 +1,14 @@
+.leftNav{
+    height: 90vh;
+    width: 20vw;
+    background-color: lightgray;
+    border-right: solid 1px gray;
+    text-align: center;
+}
+
+.leftNav button{
+    width: 80%;
+    height: 8%;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}

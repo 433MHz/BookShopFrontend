@@ -1,1 +1,3 @@
-<p>left-nav-menu works!</p>
+<div class="leftNav">
+   <button *ngFor = "let button of buttons" (click) = "returnClickedButtonValue(button.id)">{{button.name}}</button>
+</div>
