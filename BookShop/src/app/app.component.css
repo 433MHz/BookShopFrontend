@@ -1,0 +1,23 @@
+.topNav{
+    width: 100vw;
+    height: 10vh;
+
+    background-color: lightgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topNav button{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.topNav button:hover{
+    cursor: pointer;
+}
+
+.topNav button:first-child{
+    margin-right: 2rem;
+}
