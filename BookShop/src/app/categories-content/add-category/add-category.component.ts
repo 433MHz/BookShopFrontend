@@ -12,4 +12,8 @@ export class AddCategoryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  categoryName: string;
+
+
+  // Need to add function to check if category name exist in database
 }

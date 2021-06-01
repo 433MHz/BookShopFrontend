@@ -1,7 +1,7 @@
 <div class="container">
     <app-left-nav-menu [buttons] = 'buttons' (clickedButtonNumber) = "getClickedButtonNumber($event)"></app-left-nav-menu>
 
-    <div class="rightContainer">
+    <div class="rightContent">
         <app-add-book *ngIf = "clickedButtonNumber === 1"></app-add-book>
         <app-preview-books *ngIf = "clickedButtonNumber === 2"></app-preview-books>
     </div>
