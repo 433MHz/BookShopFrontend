@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-left-nav-menu',
@@ -13,8 +13,9 @@ export class LeftNavMenuComponent implements OnInit {
   }
 
   @Input() buttons: [];
+  @Output() clickedButtonNumber = new EventEmitter<number>();
 
   returnClickedButtonValue(buttonNumber){
-    console.log(buttonNumber)
+    this.clickedButtonNumber.emit(buttonNumber);
   }
 }

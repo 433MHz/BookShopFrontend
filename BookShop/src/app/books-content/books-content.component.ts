@@ -17,4 +17,10 @@ export class BooksContentComponent implements OnInit {
     {id: 2, name:"Preview Books"},
   ]
 
+  clickedButtonNumber: number = 0;
+
+  getClickedButtonNumber($event){
+    this.clickedButtonNumber = $event;
+  }
+
 }

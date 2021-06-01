@@ -17,4 +17,10 @@ export class CategoriesContentComponent implements OnInit {
     {id: 2, name:"Preview Categories"},
   ]
 
+  clickedButtonNumber: number = 0;
+
+  getClickedButtonNumber($event){
+    this.clickedButtonNumber = $event;
+  }
+
 }
