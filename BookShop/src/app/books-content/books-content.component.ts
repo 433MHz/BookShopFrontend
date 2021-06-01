@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-books-content',
   templateUrl: './books-content.component.html',
-  styleUrls: ['./books-content.component.css']
+  styleUrls: ['./books-content.component.css', '../booksAndCategories.css']
 })
 export class BooksContentComponent implements OnInit {
 
@@ -17,7 +17,7 @@ export class BooksContentComponent implements OnInit {
     {id: 2, name:"Preview Books"},
   ]
 
-  clickedButtonNumber: number = 0;
+  clickedButtonNumber: number = 1;
 
   getClickedButtonNumber($event){
     this.clickedButtonNumber = $event;
