@@ -1,3 +1,8 @@
 <div class="container">
     <app-left-nav-menu [buttons] = "buttons" (clickedButtonNumber) = "getClickedButtonNumber($event)"></app-left-nav-menu>
+
+    <div class="rightContent">
+        <app-add-category *ngIf = "clickedButtonNumber === 1"></app-add-category>
+        <app-preview-categories *ngIf = "clickedButtonNumber === 2"></app-preview-categories>
+    </div>
 </div>
