@@ -1,1 +1,13 @@
-<p>preview-books works!</p>
+<div class="container">
+    <div *ngFor = "let book of books">
+        <ul>
+            <li><div>Book Title</div> <div>{{book.id}}</div></li>
+            <li><div>Author First Name</div> <div></div></li>
+            <li><div>Author Last Name</div> <div></div></li>
+            <li><div>Year Of Publishment</div> <div></div></li>
+            <li><div>Category</div> <div></div></li>
+
+            <button>Edit</button> <button>Delete</button>
+        </ul>
+    </div>
+</div>

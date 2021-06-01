@@ -12,4 +12,12 @@ export class PreviewBooksComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Need to implement api connection here in future for getting books list, deleting book and editing book
+
+  books = [
+    {id:1},
+    {id:2},
+    {id:3},
+  ]
+
 }

@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.container > div{
+    background-color: lightgray;
+    min-width: 30vw;
+    min-height: 30vh;
+    padding: 1rem 2rem;
+}
+
+.container li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+
+.container > div button{
+    margin-top: 2rem;
+    width: 50%;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.container > div li:nth-child(even){
+    background-color: gainsboro;
+}
