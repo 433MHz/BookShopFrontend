@@ -12,4 +12,9 @@ export class BooksContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buttons = [
+    {id: 1, name:"Add Book"},
+    {id: 2, name:"Preview Books"},
+  ]
+
 }

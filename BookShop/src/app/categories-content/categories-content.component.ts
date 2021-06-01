@@ -12,4 +12,9 @@ export class CategoriesContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buttons = [
+    {id: 1, name:"Add Category"},
+    {id: 2, name:"Preview Categories"},
+  ]
+
 }
