@@ -1,21 +1,29 @@
-.container div{
+.container > div{
     background-color: lightgray;
     padding: 1rem;
-    width: 50%;
-    height: 30%;
+    width: 100%;
+    height: 15vh;
+}
+
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .container > div > div{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
+    height: 50%;
 }
 
 .categoryNameDisplay{
     text-align: right;
 }
 
-.container div button{
+.container > div > button{
     padding: .5rem;
     font-size: 1.2rem;
 }
