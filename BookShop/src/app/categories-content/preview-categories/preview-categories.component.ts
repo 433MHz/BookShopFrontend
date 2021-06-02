@@ -12,4 +12,16 @@ export class PreviewCategoriesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  categories: [];
+
+  // Need to add api connection for editing and deleting category
+
+  editCategoryName(categoryID:number){
+
+  }
+
+  deleteCategory(categoryID:number){
+
+  }
+
 }

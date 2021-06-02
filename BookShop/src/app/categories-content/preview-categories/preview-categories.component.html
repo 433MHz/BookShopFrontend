@@ -1,1 +1,7 @@
-<p>preview-categories works!</p>
+<div class="container">
+    <div *ngFor = "let category of categories">
+        <div><div>CategoryName:</div> <div class="categoryNameDisplay">{{category.name}}</div></div>
+        <button (click) = "editCategoryName(category.id)">Edit Name</button>
+        <button (click) = "deleteCategory(category.id)">Delete Category</button>
+    </div>
+</div>

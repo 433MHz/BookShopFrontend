@@ -1,0 +1,21 @@
+.container div{
+    background-color: lightgray;
+    padding: 1rem;
+    width: 50%;
+    height: 30%;
+}
+
+.container > div > div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.categoryNameDisplay{
+    text-align: right;
+}
+
+.container div button{
+    padding: .5rem;
+    font-size: 1.2rem;
+}
