@@ -1,12 +1,13 @@
 <div class="container">
     <h2>Add New Book</h2>
 
-    <div><label for="title">Book Title</label><input type="text" id="title" [(ngModel)] = "bookData.bookTitle"></div>
+    <div><label for="title">Book Title</label><input type="text" id="title" [(ngModel)] = "bookData.title"></div>
     <div><label for="afName">Author First Name</label><input type="text" id="afName" [(ngModel)] = "bookData.authorFirstName"></div>
-    <div><label for="alName">Author Surname</label><input type="text" id="alName" [(ngModel)] = "bookData.authorLastName"></div>
-    <div><label for="year">Year Of Publishment</label><input type="number" id="year" [(ngModel)] = "bookData.yearOfPublishment"></div>
-    <div><label for="category">Category</label><select id="category" [(ngModel)] = "bookData.category">
-        <option *ngFor = "let option of options" [value]="option.id">{{option.name}}</option>
+    <div><label for="alName">Author Surname</label><input type="text" id="alName" [(ngModel)] = "bookData.authorSurname"></div>
+    <div><label for="year">Year Of Publishment</label><input type="number" id="year" [(ngModel)] = "bookData.year"></div>
+    <div><label for="category">Category</label><select id="category" [(ngModel)] = "selectedOption">
+        <option *ngFor = "let category of categories" [value]="category.id">{{category.name}}</option>
     </select></div>
+    <div *ngIf = "responseMessage != null">{{responseMessage}}</div>
     <div><button (click) = "sendBookToBackend()">Add</button></div>
 </div>
