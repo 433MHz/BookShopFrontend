@@ -1,11 +1,11 @@
 <div class="container">
     <div *ngFor = "let book of books">
         <ul>
-            <li><div>Book Title</div> <div>{{book.id}}</div></li>
-            <li><div>Author First Name</div> <div></div></li>
-            <li><div>Author Last Name</div> <div></div></li>
-            <li><div>Year Of Publishment</div> <div></div></li>
-            <li><div>Category</div> <div></div></li>
+            <li><div>Book Title</div> <div>{{book.title}}</div></li>
+            <li><div>Author First Name</div> <div>{{book.authorFirstName}}</div></li>
+            <li><div>Author Last Name</div> <div>{{book.authorSurname}}</div></li>
+            <li><div>Year Of Publishment</div> <div>{{book.year}}</div></li>
+            <li><div>Category</div> <div *ngIf = "book.category != null">{{book.category.name}}</div></li>
 
             <button>Edit</button> <button>Delete</button>
         </ul>
