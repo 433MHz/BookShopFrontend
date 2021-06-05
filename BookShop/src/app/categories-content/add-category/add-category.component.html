@@ -1,4 +1,5 @@
 <div class="container">
     <div><label for="category">Category Name</label><input type="text" id="category" [(ngModel)] = "categoryName"></div>
-    <div><button>Add Category</button></div>
+    <div *ngIf = 'response != null'>{{response}}</div>
+    <div><button (click) = "postCategory()">Add Category</button></div>
 </div>
